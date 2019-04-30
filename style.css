@@ -7,20 +7,10 @@
       grid-template-rows: 200px;
   grid-auto-flow: row;
   grid-auto-rows: 200px;
+  grid-auto-columns: 200px;
   width: 800px;
   height: 600px;
   border: 1px solid blue;
-  justify-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
 }
 
 .parent div {
@@ -30,8 +20,11 @@
 }
 
 .parent .three {
-  position: absolute;
-  bottom: 0px;
-  right: 0;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
 }
 /*# sourceMappingURL=style.css.map */
